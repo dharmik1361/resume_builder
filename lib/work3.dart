@@ -69,7 +69,7 @@ class work3 extends StatelessWidget {
                   trailing: Icon(Icons.arrow_forward_ios),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => personal(),
+                      builder: (context) => Personal(),
                     ));
                   },
                 ),
@@ -88,6 +88,9 @@ class work3 extends StatelessWidget {
                     style: TextStyle(fontSize: 20),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => experience()));
+                  },
                 ),
                 ListTile(
                   leading: FaIcon(FontAwesomeIcons.fileCircleExclamation),
@@ -96,6 +99,11 @@ class work3 extends StatelessWidget {
                     style: TextStyle(fontSize: 20),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => tech(),
+                    ));
+                  },
                 ),
                 ListTile(
                   leading: FaIcon(FontAwesomeIcons.bookOpen),
